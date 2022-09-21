@@ -113,4 +113,16 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
+    @Test
+    public void setMaxNumberOfStation(){
+        Radio radio = new Radio(100);
+        radio.setNumberOfStation(99);
+        radio.setNumberOfStationNext();
+
+        int expected = 0;
+        int actual = radio.getNumberOfStation();
+
+        Assertions.assertEquals(expected,actual);
+    }
 }
