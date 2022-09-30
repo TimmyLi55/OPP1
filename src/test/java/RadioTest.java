@@ -103,7 +103,7 @@ public class RadioTest {
     }
 
     @Test
-    public void setMaxAndMinStationTest(){
+    public void setMaxAndMinStationTest() {
         Radio radio = new Radio();
         radio.setNumberOfStation(10);
         radio.setNumberOfStation(-1);
@@ -115,7 +115,7 @@ public class RadioTest {
     }
 
     @Test
-    public void setMaxNumberOfStation(){
+    public void setMaxNumberOfStation() {
         Radio radio = new Radio(100);
         radio.setNumberOfStation(99);
         radio.setNumberOfStationNext();
@@ -123,6 +123,6 @@ public class RadioTest {
         int expected = 0;
         int actual = radio.getNumberOfStation();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 }

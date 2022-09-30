@@ -12,7 +12,7 @@ public class Radio {
         maxStation = this.maxNumberOfStation - 1;
     }
 
-    public Radio(){
+    public Radio() {
         maxNumberOfStation = 10;
         maxStation = maxNumberOfStation - 1;
     }
